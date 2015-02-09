@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>webgems</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS here -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/colorbox.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+
+    <!-- Menu Bar -->
+    <a id="menu-toggle" href="javascript:void(0)" class="btn btn-primary btn-md toggle" onclick =
+    "document.getElementById('menu-toggle').style.display='none';" title="Open menu">menu</a>
+    <div id="menubar-wrapper">
+      <ul class="menubar-nav">
+        <a id="menu-close" href="javascript:void(0)" class="btn btn-default pull-right toggle"  onclick =
+    "document.getElementById('menu-toggle').style.display='block';" title="Close menu"><i class="fa fa-times"></i></a>
+        <li class="menubar-brand"><a href="http://www.webgems.info"><strong><i class="fa fa-cogs"></i>webgems</strong></a></li>
+        <li class="menubar-button"><a class="iframe" href="about.html">About</a></li>
+
+        <li class="menubar-button"><a class="iframe" href="services.html">Services</a></li>
+
+        <li class="menubar-button"><a class="iframe" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <!-- /Menu Bar -->
+  
+    <!-- Cover Page Area -->
+    <div id="top" class="header">
+      <div class="header-text">
+        <h1 id="main-text"><i class="fa fa-cogs"></i>webgems</h1>
+        <h3 id="sub-text"><em>making the web work for you!</em></h3>
+       
+        <div id="footer">
+               <ul class="list-inline">
+                <li><a href="https://www.facebook.com/webgems"><i class="fa fa-facebook fa-2x"></i></a></li>
+                <li><a href="https://twitter.com/webgemsZW"><i class="fa fa-twitter fa-2x"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin fa-2x"></i></a></li>
+                <li><a href="mailto:sales@webgems.info"><i class="fa fa-envelope fa-2x"></i></a></li></i></a></li>
+              </ul>
+              <p>Copyright &copy; webgems 2014</p>
+
+        </div>
+
+      </div>    
+
+    </div>
+    <!-- /Cover Page Area -->
+
+    <!-- JQuery -->
+    <script src="js/jquery-1.10.2.js"></script>
+
+    <!-- Lightbox plugin for JQuery -->
+    <script src="js/jquery.colorbox.min.js"></script>
+
+    <!-- Custom JavaScript for the Menu Bar -->
+    <script>
+        $("#menu-close").click(function(e) {
+            e.preventDefault();
+            $("#menubar-wrapper").toggleClass("active");
+        });
+    </script>
+
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#menubar-wrapper").toggleClass("active");
+        });
+    </script>
+
+    <!-- Init Lightbox plugin -->
+    <script>
+      $(document).ready(function(){
+          $(".iframe").colorbox({iframe:true, width:"92%", height:"85%"});
+      });
+
+    </script>
+
+  </body>
+
+</html>
