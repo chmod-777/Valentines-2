@@ -1,0 +1,243 @@
+/*
+
+	(c) 2015 Charles Muzonzini - Webgems - http://webgems.info
+                             - Hagadol IT - http://hagadolit.com
+
+*/
+/* Variables */
+/* Global Styles */
+html,
+body {
+  height: 100%;
+  width: 100%; }
+
+.header-text {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: white; }
+
+.header-text h1 {
+  padding: 0px;
+  margin: 0;
+  font-size: 4.5em;
+  font-weight: 700; }
+
+h1, h2, h3, p, a {
+  font-family: "Kaushan Script", cursive; }
+
+/* Cover Page Area */
+.header {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: url(../img/1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+/* Menu Bar */
+#menubar-wrapper {
+  margin-right: -100%;
+  right: 0;
+  width: 100%;
+  position: fixed;
+  height: 9%;
+  z-index: 1000;
+  border-radius: 0px;
+  -webkit-transition: all 1s ease 0s;
+  -moz-transition: all 1s ease 0s;
+  -ms-transition: all 1s ease 0s;
+  -o-transition: all 1s ease 0s;
+  transition: all 1s ease 0s; }
+
+.menubar-nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.menubar-nav li {
+  line-height: 40px;
+  text-indent: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1.5em;
+  opacity: 1; }
+
+.menubar-nav * {
+  display: inline; }
+
+.menubar-nav li a {
+  color: #000000;
+  display: inline;
+  text-decoration: none; }
+
+.menubar-nav li a:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  text-decoration: none; }
+
+.menubar-nav li a:active,
+.menubar-nav li a:focus {
+  text-decoration: none; }
+
+.menubar-nav > .menubar-brand {
+  height: 55px;
+  line-height: 55px;
+  font-size: 18px; }
+
+.menubar-nav > .menubar-brand a {
+  color: #999999; }
+
+.menubar-nav > .menubar-brand a:hover {
+  color: #fff;
+  background: none; }
+
+.menubar-nav > .menubar-button a {
+  color: #999999; }
+
+.menubar-nav > .menubar-button a:hover {
+  color: #fff;
+  background: none; }
+
+#menu-toggle {
+  top: 0;
+  right: 0;
+  position: fixed;
+  z-index: 1; }
+
+#menubar-wrapper.active {
+  right: 100%;
+  width: 100%;
+  -webkit-transition: all 1s ease 0s;
+  -moz-transition: all 1s ease 0s;
+  -ms-transition: all 1s ease 0s;
+  -o-transition: all 1s ease 0s;
+  transition: all 1s ease 0s; }
+
+.toggle {
+  margin: 5px 5px 0 0; }
+
+.header #main-text {
+  padding-top: 180px; }
+
+/* -- Footer -- */
+#footer {
+  position: relative;
+  vertical-align: bottom;
+  padding-top: 180px;
+  letter-spacing: 10px;
+  color: #ffffff; }
+
+#footer a {
+  text-decoration: none;
+  text-align: center; }
+
+#footer span {
+  color: black; }
+
+/* -- Contact Us page -- */
+.form-contact-us input[type="text"],
+.form-contact-us textarea {
+  margin-bottom: 20px; }
+
+.form-contact-us input[type="text"] {
+  height: 25px;
+  width: 35%; }
+
+#inputName {
+  width: 25%; }
+
+.form-contact-us textarea {
+  height: 200px;
+  width: 70%; }
+
+.bottom-space {
+  margin-bottom: 30px; }
+
+/* Responsive */
+@media (max-width: 1280px) {
+  .menubar-nav li {
+    font-size: 1.4em; }
+
+  .menubar-brand a {
+    font-size: 1.4em; } }
+@media (max-width: 980px) {
+  .menubar-nav li {
+    font-size: 2.3em; }
+
+  .menubar-brand a {
+    font-size: 2.3em; }
+
+  .header #main-text {
+    padding-top: 530px; }
+
+  #footer {
+    padding-top: 530px; } }
+@media (max-width: 800px) {
+  .menubar-nav li {
+    font-size: 2.1em; }
+
+  .menubar-brand a {
+    font-size: 2.1em; }
+
+  .header #main-text {
+    padding-top: 410px; }
+
+  #footer {
+    padding-top: 390px; } }
+@media (max-width: 768px) {
+  .header {
+    padding-top: 10px;
+    background: url(img/1.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+
+  .menubar-nav li {
+    font-size: 1.9em; }
+
+  .menubar-brand a {
+    font-size: 1.9em; }
+
+  .header #main-text {
+    padding-top: 410px; }
+
+  #footer {
+    padding-top: 390px; } }
+@media (max-width: 480px) {
+  .menubar-brand {
+    display: none; }
+
+  .menubar-nav li {
+    font-size: 1.5em; } }
+@media (max-width: 360px) {
+  .menubar-brand {
+    display: none; }
+
+  .menubar-nav li {
+    font-size: 1.5em; }
+
+  .header #main-text {
+    padding-top: 210px; }
+
+  #footer {
+    padding-top: 190px; } }
+@media (max-width: 320px) {
+  .menubar-nav li {
+    font-size: 1em; }
+
+  .header #main-text {
+    padding-top: 80px; }
+
+  #footer {
+    padding-top: 120px;
+    letter-spacing: 0px; } }
+
+/*# sourceMappingURL=style.css.map */

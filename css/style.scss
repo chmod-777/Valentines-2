@@ -1,8 +1,15 @@
 /*
 
-	(c) 2014 Charles Muzonzini - Webgems - http://webgems.info
+	(c) 2015 Charles Muzonzini - Webgems - http://webgems.info
+                             - Hagadol IT - http://hagadolit.com
 
 */
+
+/* Variables */
+
+$primary-color: #fff;
+
+$fonts: 'Kaushan Script', cursive;
 
 /* Global Styles */
 
@@ -20,7 +27,7 @@ body {
 }
 
 .header-text h1 {
-  padding: 0;
+  padding: 0px;
   margin: 0;
   font-size: 4.5em;
   font-weight: 700;
@@ -28,6 +35,10 @@ body {
 
 .header-text h3 {
 
+}
+
+h1, h2, h3, p, a, {
+  font-family: $fonts;
 }
 
 
@@ -38,7 +49,7 @@ body {
   height: 100%;
   width: 100%;
   position: relative;
-  background: url(img/1.jpg) no-repeat center center fixed;
+  background: url(../img/1.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
